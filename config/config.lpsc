@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!-- This is the LinPad Syntax Configuration file -->
+<lpsc>
+	<format id="preprocessor" >
+		<bold>false</bold>
+		<italic>false</italic>
+		<underline>false</underline>
+		<color>#008000</color>
+	</format>
+	<format id="comment" >
+		<bold>false</bold>
+		<italic>true</italic>
+		<underline>false</underline>
+		<color>#000080</color>
+	</format>
+	<format id="comment/doxygen">
+		<bold>false</bold>
+		<italic>true</italic>
+		<underline>false</underline>
+		<color>#3366FF</color>
+	</format>
+	<format id="keyword" >
+		<bold>true</bold>
+		<italic>false</italic>
+		<underline>false</underline>
+		<color>#aa0000</color>
+	</format>
+	<format id="data" >
+                <bold>true</bold>
+                <italic>false</italic>
+                <underline>false</underline>
+                <color>darkRed</color>
+        </format>
+	<format id="extra" >
+		<bold>true</bold>
+		<italic>false</italic>
+		<underline>false</underline>
+		<color>#0095ff</color>
+	</format>
+	<format id="numerical" >
+		<bold>false</bold>
+		<italic>false</italic>
+		<underline>false</underline>
+		<color>#800080</color>
+	</format>
+	<format id="text" >
+		<bold>false</bold>
+		<italic>false</italic>
+		<underline>false</underline>
+		<color>#ff0000</color>
+	</format>
+</lpsc>

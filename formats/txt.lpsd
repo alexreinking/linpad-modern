@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<lpsd type="Text" extensions=".txt">
+	<word description="Horizontal Line" format="text">^(\*|\#|\-){3,}.*</word>
+	<word description="List Element" format="data">^[\s\t]*(\*|\-)[\s\t]</word>
+</lpsd>

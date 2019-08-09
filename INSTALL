@@ -1,0 +1,10 @@
+LinPad installation procedure
+---
+To install linpad on your system you need only type 3 commands.
+
+1) qmake linpad.pro
+2) make
+3) sudo make install
+
+And you're set!
+---

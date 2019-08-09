@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<lpsd type="C++ Source" extensions=".cc;.cpp;.cxx;.h;.hxx;.moc;.hpp" cIndentation="true">
+	<sequence description="literals/string" format="text" escapes="\" priority="0">
+		<start>\"</start>
+		<stop>\"</stop>
+	</sequence>
+
+	<sequence description="literals/char" format="text" escapes="\" priority="1">
+                <start>\'</start>
+                <stop>\'</stop>
+	</sequence>
+
+<!--        <sequence description="comments/doxygen" format="comment/doxygen" priority="4" trail="2" multiline="true">
+                <start>\/\*\* </start>
+                <stop>\*\/</stop>
+        </sequence> -->
+
+	<sequence description="comments/multiline" format="comment" priority="3" trail="2" multiline="true">
+		<start>\/\*</start>
+		<stop>\*\/</stop>
+	</sequence>
+
+	<sequence description="comments/single" format="comment" priority="2">
+		<start>//</start>
+		<stop>$</stop> <!-- $ == end of line  -->
+	</sequence>
+
+	<list description="keywords/visibility" format="keyword">
+		<word>\bpublic\b</word>
+		<word>\bprotected\b</word>
+		<word>\bprivate\b</word>
+	</list>
+	
+	<list description="keywords/storage" format="keyword">
+		<word>\bconst\b</word>
+		<word>\bvolatile\b</word>
+		<word>\bextern\b</word>
+		<word>\bstatic\b</word>
+		<word>\bmutable\b</word>
+		<word>\bauto\b</word>
+		<word>\bregister\b</word>
+		<word>\binline\b</word>
+	</list>
+	
+	<list description="keywords/data" format="data">
+		<word>\bsigned\b</word>
+		<word>\bunsigned\b</word>
+		<word>\bbool\b</word>
+		<word>\bchar\b</word>
+		<word>\bint\b</word>
+		<word>\blong\b</word>
+		<word>\bfloat\b</word>
+		<word>\bdouble\b</word>
+		<word>\benum\b</word>
+		<word>\bunion\b</word>
+		<word>\bwchar_t\b</word>
+		<word>\bvoid\b</word>
+	</list>
+
+	<list description="keywords/blocks" format="keyword">
+		<word>\bfor\b</word>
+		<word>\bwhile\b</word>
+		<word>\bdo\b</word>
+		<word>\bif\b</word>
+		<word>\belse\b</word>
+		<word>\bswitch\b</word>
+		<word>\bcase\b</word>
+		<word>\bdefault\b</word>
+		<word>\bbreak\b</word>
+		<word>\bcontinue\b</word>
+		<word>\btry\b</word>
+		<word>\bcatch\b</word>
+		<word>\bthrow\b</word>
+		<word>\bgoto\b</word>
+		<word>\bforeach\b</word>
+		<word>\bforever\b</word>
+	</list>
+
+	<list description="keywords/oop" format="keyword">
+		<word>\bnew\b</word>
+		<word>\bdelete\b</word>
+		<word>\bclass\b</word>
+		<word>\bstruct\b</word>
+		<word>\bconst_cast\b</word>
+		<word>\bdynamic_cast\b</word>
+		<word>\bstatic_cast\b</word>
+		<word>\breinterpret_cast\b</word>
+		<word>\boperator\b</word>
+		<word>\bvirtual\b</word>
+		<word>\bthis\b</word>
+		<word>\bexplicit\b</word>
+		<word>\bfriend\b</word>
+		<word>\bnamespace\b</word>
+		<word>\busing\b</word>
+	</list>
+	
+	<list description="keywords/others" format="keyword">
+		<word>\basm\b</word>
+		<word>\bfalse\b</word>
+		<word>\btrue\b</word>
+		<word>\btemplate\b</word>
+		<word>\btypename\b</word>
+		<word>\breturn\b</word>
+		<word>\bsizeof\b</word>
+		<word>\btypeid\b</word>
+		<word>\btypedef\b</word>
+	</list>
+	
+	<list description="keywords/Qt" format="extra">
+		<word>\bforeach\b</word>
+		<word>\bforever\b</word>
+		<word>\bemit\b</word>
+		<word>\bsignals\b</word>
+		<word>\bslots\b</word>
+		<word>\bconnect\b</word>
+		<word>\bSIGNAL\b</word>
+		<word>\bSLOT\b</word>
+		<word>\bQ_OBJECT\b</word>
+		<word>\bQ_ENUM\b</word>
+		<word>\bQ_PROPERTY\b</word>
+		<word>\bQ_SIGNALS\b</word>
+		<word>\bQ_SLOTS\b</word>
+	</list>
+	
+	<word description="QtCasts" format="extra">q\w+_cast</word>
+
+	<word description="preprocessor" format="preprocessor">^#[^\n]*</word>	
+
+	<word description="data/float" format="numerical">\b[0123456789]*\.[0123456789]+f?\b</word>
+	<word description="data/hexadecimal" format="numerical">\b0[xX][0123456789abcdefABCDEF]+[ulUL]*\b</word>
+	<word description="data/octal" format="numerical">\b0[01234567]+\b</word>
+	<word description="data/decimal" format="numerical">\b[0123456789]+[ulUL]*\b</word>
+</lpsd>

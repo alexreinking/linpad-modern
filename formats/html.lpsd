@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<lpsd type="HTML Document" extensions=".html;.htm">
+	<word caseSensitive="false" description="tags" format="data">&lt;\/?(a|address|b|blockquote|body|br|center|code|dd|div|dl|dt|em|embed|font|frame|frameset|h[1-6]|head|hr|html|i|iframe|img|li|noframes|ol|p|pre|strong|table|td|th|title|tr|tt|ul|form|input|select|span|option|tbody|textarea|meta|link|style|script|noscript)\b</word>
+	<word description="special chars" format="comment">(&lt;|&gt;|&lt;\/)</word>
+	<sequence description="literals/string" format="text" escapes="\" priority="0">
+		<start>\"</start>
+		<stop>\"</stop>
+	</sequence>
+	<sequence description="comments/multiline" format="comment" priority="2" trail="3" multiline="true">
+		<start>&lt;\!\-\-</start>
+		<stop>\-\-&gt;</stop>
+	</sequence>
+</lpsd>
